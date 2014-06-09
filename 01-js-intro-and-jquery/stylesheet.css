@@ -1,0 +1,50 @@
+/* center the text to all elements of the page */
+* {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+hidden {
+  font-size: 25px;
+  font-family: serif;
+  color: blue;
+  float: left;
+}
+
+.sectionTw {
+  clear: both;
+  float: right;
+  /* Add a transparent background covering the whole screen behind the tweets so the background gets dimmed.  */
+  background-color: transparent;
+  height: 600px;
+  width: 1050px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-top: -600px;
+}
+
+.response {
+  clear: left;
+  float: left;
+  background-color: lightblue;
+  height: 400px;
+  width: 250px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.alias {
+  clear: left;
+  float: left;
+  height: 70px;
+  width: 250px;
+  border-radius: 5px;
+  background-color: lightblue;
+  margin-right: 20px;
+  
+}
+
+button {
+  clear: both;
+  float: left;
+}

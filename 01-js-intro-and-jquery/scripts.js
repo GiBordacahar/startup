@@ -1,4 +1,4 @@
-/* When the page has finished loading the section must fade in. */
+
 $(document).ready(function() {
 
   //var twurl= "http://tweetproxy.ap01.aws.af.cm/search";
@@ -12,6 +12,10 @@ $(document).ready(function() {
     $('.sectionTw').append(resp);
   }); */
   
+  /* When the page has finished loading the section must fade in. */
+  $('header').hide();
+  $('header').fadeIn(3000);
+
   $.ajax({
     url: "http://tweetproxy.ap01.aws.af.cm/search",
     jsonp: "callback",
@@ -28,8 +32,7 @@ $(document).ready(function() {
     }
    });
 
-  $('hidden').fadeIn('slow');
-
+  
   /* Add a textbox with the class "alias", and put the cursor inside it right after the fades in.  */
   $('.alias').focus();
 

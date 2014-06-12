@@ -1,5 +1,5 @@
 /* center the text to all elements of the page */
-* {
+html {
   text-align: center;
   margin-bottom: 20px;
 }

@@ -24,21 +24,13 @@ p {
 }
 
 .container-bottom {
-	overflow: visible;
-	padding: 8px 0 8px 8px;
-	border: 1px solid #999;
-	width: auto;
-	height: 530px;
-	margin-left: 0;
-	margin-right: 0;
-}
-
-img {
-	float: left;
-	width: 400px;
-	height: 250px;
-	margin: 0 20px 0 20px;
-	margin-bottom: 15px;
+  overflow: visible;
+  padding: 8px 0 8px 8px;
+  border: 1px solid #999;
+  width: auto;
+  height: 530px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .little-box {
@@ -59,17 +51,33 @@ img {
 	height: 40px;
 }
 
-.box-p {
-    background-color: black;
-	float: right;
-	color:#fff;
-	font-size: 20px;
-    width: 100px;
-	height: 20px;
-	margin-top: 20px;
+.boxp {
+  background-color: black;
+  float: right;
+  color:#fff;
+  font-size: 20px;
+  width: 100px;
+  height: 20px;
+  margin-top: 20px; 
 }
 
 .little-box:hover {
   right: 0px;
   p.right: -500px;
+ }
+
+@media screen and (min-width:600px) {
+  img {
+      display: inline-block;
+	  width: 33%;
+  } 
+}
+@media screen and (max-width:599px) {
+  img {
+      display: inline-block;
+	  width: 50%;
+  } 
+  .little-box {
+    width: 60%;
+  }
 }

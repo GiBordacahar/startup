@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> topic-4 </title>
+    <meta name="description" content="">
+    <!-- This enables use of media queries for cross-device layouts. */ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="content" class="profile"> 
+    </div>
+    <script id="basic-template" type="text/template">
+      <div class="content">
+  	    <div class="header"> 
+          <div class="profilePic">
+            <img src={userPic}> </img>
+          </div>
+          <div class="basicInfo">
+            <h1 class="name"> {userName} </h1>
+            <p> {current}</p>
+          </div>
+        </div>
+        <div class="apptitude-bar"> 
+          <h4> Skills </h4>
+          {#skill}
+          <div class="skill"> 
+            <p> {skillName}
+            </p> 
+            {~n}
+          </div>
+          {/skill}
+        </div>
+        <div class="education-bar">
+          <h4> Education </h4>
+           {#education}
+          <div class="education">
+            <p> {nameEducation} 
+            </p>
+            <h6> {sinceUntil}
+            </h6>
+            {~n}
+          </div> 
+          {/education}
+        </div>
+        <div class="connections"> 
+         <h4> Connections </h4>
+          {#contact}
+          <div class="contact">
+            <div class="contactPic">
+              <img src={urlContactPic}> </img>
+            </div>
+            <p class="nameC"> {contactName} </p>
+            {~n}
+          </div>
+          {/contact}
+        </div>
+        <div class="work-experience"> 
+         <h4> Work Experience </h4>
+          {#workE}
+          <div class="work">
+            <p class="nameWork"> {workName} </p>
+            <p class="period"> {periodwork} </p>
+            {~n}
+          </div>
+          {:else}
+            You have never worked! lucky you
+          {/workE}
+        </div>
+      </div>
+      <div class="sidebar"> 
+        <div class="suggestionsConnections">
+          <h4>You may like...
+          </h4>
+          <div class="contact">
+            <div class="contactPic">
+              <img src="./img/sug1.jpg"> </img>
+            </div>
+            <p class="nameC"> Taylor Swift </p>
+          </div>
+          <div class="contact">
+            <div class="contactPic">
+              <img src="./img/sug2.jpg"> </img>
+            </div>
+            <p class="nameC"> Lionel Messi </p>
+          </div>
+          <div class="contact">
+            <div class="contactPic">
+              <img src="./img/sug3.jpg"> </img>
+            </div>
+            <p class="nameC"> Ellen Degeneres </p>
+          </div>
+        </div>
+        <div class="suggestionsSkills">
+          <h4>You may know
+          </h4>
+          <div class="skill"> 
+            <p> Javascript
+            </p> 
+          </div>
+          <div class="skill"> 
+            <p> Html
+            </p> 
+          </div>
+          <div class="skill"> 
+            <p> Php
+            </p> 
+          </div>
+        </div>
+      </div>
+    </script>
+    <script type="text/javascript" src="./lib/dust.js"></script>
+    <script type="text/javascript" src="./lib/cliente.js"></script>
+    <script type="text/javascript" src="./lib/jquery.js" ></script>
+    <script type="text/javascript" src="./script.js" ></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "userPic":"img/img1.jpg",
+  "userName":"Gisela Soledad Bordacahar",
+  "current":"Estudiante de Ingeniería de Sistemas en Universidad Nacional del Centro de la Provincia de Buenos Aires",
+  "skill": [
+    {
+      "skillName":"Java"
+    },
+    {
+      "skillName":"C++"
+    },
+    {
+      "skillName":"Prolog"
+    },
+    {
+      "skillName":"Haxe"
+    }
+  ],
+  "education": [
+     {
+       "nameEducation":"High School",
+       "sinceUntil":"2005-2010"
+     },
+     {
+       "nameEducation":"University",
+       "sinceUntil":"2011-2015"
+     }
+  ],
+  "contact": [
+    {
+    	"urlContactPic": "img/contact1.jpg",
+    	"contactName": "Gregory House"
+    },
+    {
+    	"urlContactPic": "img/contact2.gif",
+    	"contactName": "Lisa Simpson"
+    },
+    {
+    	"urlContactPic": "img/contact3.jpg",
+    	"contactName": "Bender"
+    }   
+  ],
+  "workE": []   
+}
